@@ -1,0 +1,49 @@
+body {
+  background-color: skyblue;
+  font-family: Georgia, serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  height: 10%;
+  width: 100%;
+  margin-left: auto;
+}
+
+#backgroundImage {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background: url("grassBackground.png") center;
+}
+
+/* #animal {
+  margin-left: auto;
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "left center right";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px;
+  grid-gap: 5px;
+  width: 360px;
+}
+
+.grid-left {
+  grid-area: left;
+  transform: translate(-10px, -10px);
+}
+.grid-center {
+  grid-area: center;
+  transform: translate(-10px, -10px);
+}
+.grid-right {
+  grid-area: right;
+  transform: translate(-10px, -10px);
+}
+
+.grid-container div {
+  background-color: lightgreen;
+}
