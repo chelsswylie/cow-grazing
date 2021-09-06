@@ -1,7 +1,10 @@
 let cow = document.querySelector("#animal");
 let moveBy = 10;
 const directionArr = [];
-
+const cowUp = (cow.src = "cow.png");
+const cowRight = (cow.src = "cowRight.png");
+const cowDown = (cow.src = "cowDown.png");
+const cowLeft = (cow.src = "cowLeft.png");
 window.addEventListener("load", () => {
   cow.style.position = "absolute";
   cow.style.left = 0;
@@ -41,3 +44,5 @@ window.addEventListener("keyup", (e) => {
   }
   console.log(directionArr);
 });
+
+// if else if or switch statement to rotate between images of cow to change between key press
