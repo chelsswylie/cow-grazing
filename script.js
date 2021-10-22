@@ -1,16 +1,6 @@
 let cow = document.querySelector("#animal");
-// let cowUp = "/cowUp.png";
-// let cowRight = "/cowRight.png";
-// let cowBottom = "/cowBottom.png";
-// let cowLeft = "/cowLeft.png";
-// let cow = new cow();
-// cow.src = "/cowUp.png";
 let moveBy = 10;
 const directionArr = [];
-// const cowUp = (cow.src = "cow.png");
-// const cowRight = (cow.src = "cowRight.png");
-// const cowDown = (cow.src = "cowDown.png");
-// const cowLeft = (cow.src = "cowLeft.png");
 window.addEventListener("load", () => {
   cow.style.position = "absolute";
   cow.style.left = 0;
